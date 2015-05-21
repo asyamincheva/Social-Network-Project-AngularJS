@@ -1,8 +1,8 @@
 'use strict';
 
 mySquadSocialNetwork.controller('LoginController',
-    ['$scope', '$route', '$timeout', 'userData', 'credentials', 'toaster',
-        function ($scope, $route, $timeout, userData, credentials, toaster) {
+    ['$scope', '$route','$location', '$timeout', 'userData', 'credentials', 'toaster',
+        function ($scope, $route, $location, $timeout, userData, credentials, toaster) {
         $scope.rememberMe = false;
         $scope.login = login;
 
@@ -19,8 +19,7 @@ mySquadSocialNetwork.controller('LoginController',
                     }
 
                     toaster.pop('success', 'Login successful!');
-                    $scope.loginForm.$setPristine();
-                    reloadRoute(2000);
+                    $location.path('/');
                 }, function (error) {
                     toaster.pop('error', 'Login unsuccessful!', error.data.message);
                 });
