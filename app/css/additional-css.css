@@ -20,7 +20,7 @@
     margin-bottom: 20px;
 }
 
-#register-login-message-ask {
+.register-login-message-ask {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
