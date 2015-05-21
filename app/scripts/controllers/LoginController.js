@@ -13,9 +13,9 @@ mySquadSocialNetwork.controller('LoginController',
                     $scope.user = {};
 
                     if ($scope.rememberMe) {
-                        $scope.$storage = credentials.saveInLocalStorage(data.access_token, data.token_type);
+                        $scope.$storage = credentials.saveTokenInLocalStorage(data.access_token, data.token_type);
                     } else {
-                        $scope.$storage = credentials.saveInSessionStorage(data.access_token, data.token_type);
+                        $scope.$storage = credentials.saveTokenInSessionStorage(data.access_token, data.token_type);
                     }
 
                     toaster.pop('success', 'Login successful!');
