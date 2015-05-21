@@ -30,3 +30,7 @@
 body {
     background: url('../img/light-gradient-10-1600x900.jpg') no-repeat center center fixed;
 }
+
+#radio-input-register {
+    padding-bottom: 0px;
+}

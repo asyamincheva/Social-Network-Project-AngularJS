@@ -4,46 +4,85 @@
 
 <div class="container" id="login-register-container">
     <div id="login-register-forms-box">
-        <form class="login-form" action="index.html" id="login-form-box">
+        <form class="login-form" action="index.html" id="login-form-box" ng-controller="LoginController">
             <div class="login-wrap">
                 <div class="register-login-message-ask">Already have an account? Login!</div>
+
                 <p class="login-img"><i class="icon_lock_alt"></i></p>
+
                 <div class="input-group">
                     <span class="input-group-addon"><i class="icon_profile"></i></span>
-                    <input type="text" class="form-control" placeholder="Username" autofocus>
+                    <input type="text" class="form-control" ng-model="loginUser.username" placeholder="Username" autofocus>
                 </div>
+
                 <div class="input-group">
                     <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" ng-model="loginUser.password" placeholder="Password">
                 </div>
-                <button class="btn btn-primary btn-lg btn-block" type="submit">Login</button>
+
+                <button class="btn btn-primary btn-lg btn-block" ng-click="login(loginUser, loginForm)" type="submit">Login</button>
             </div>
         </form>
-        <form class="login-form" action="index.html" id="register-form-box">
+
+        <form class="login-form" action="index.html" id="register-form-box" ng-controller="RegisterController">
             <div class="login-wrap">
                 <div class="register-login-message-ask">Don't have an account? Register!</div>
+
                 <p class="login-img"><i class="icon_lock_alt"></i></p>
                 <div class="input-group">
                     <span class="input-group-addon"><i class="icon_profile"></i></span>
-                    <input type="text" class="form-control" placeholder="Username" autofocus>
+                    <input type="text" class="form-control" ng-model="user.username" placeholder="Username" autofocus required="required">
                 </div>
+
                 <div class="input-group">
                     <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" ng-model="user.password" placeholder="Password" required="required">
                 </div>
+
                 <div class="input-group">
                     <span class="input-group-addon"><i class="icon_key_alt"></i></span>
-                    <input type="password" class="form-control" placeholder="Confirm Password">
+                    <input type="password" class="form-control" ng-model="user.confirmPassword" placeholder="Confirm Password" required="required">
                 </div>
+
                 <div class="input-group">
                     <span class="input-group-addon"><i class="icon_profile"></i></span>
-                    <input type="text" class="form-control" placeholder="Name" autofocus>
+                    <input type="text" class="form-control" ng-model="user.name" placeholder="Name" autofocus required="required">
                 </div>
+
                 <div class="input-group">
                     <span class="input-group-addon"><i class="icon_profile"></i></span>
-                    <input type="text" class="form-control" placeholder="Email" autofocus>
+                    <input type="text" class="form-control" ng-model="user.email" placeholder="Email" autofocus required="required">
                 </div>
-                <button class="btn btn-info btn-lg btn-block" type="submit">Register</button>
+
+                <div class="input-group" id="radio-input-register">
+                    <div>
+                        <label class="col-md-3 control-label"><b>Gender</b></label>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="radio">
+                            <div>
+                                <label>
+                                <input type="radio" ng-model="user.gender" name="gender" value="1">Male
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="radio" ng-model="user.gender" name="gender" value="2">Female
+                                </label>
+                            </div>
+                            <div>
+                                <label>
+                                    <input type="radio" ng-model="user.gender" name="gender" value="0">Other
+                                </label>
+                            </div>
+                        </div>
+                        <div class="radio">
+                        </div>
+                    </div>
+                </div>
+
+
+                <button class="btn btn-info btn-lg btn-block" ng-click="register(user, registerForm)" type="submit">Register</button>
             </div>
         </form>
     </div>
