@@ -11,6 +11,7 @@ mySquadSocialNetwork.controller('RegisterController',
                 .then(function (data) {
                     credentials.saveLoggedUser(user);
                     credentials.saveTokenInSessionStorage(data.access_token, data.token_type);
+                    $scope.registerForm.$setPristine();
                     toaster.pop('success', 'Register successful!');
                     $location.path('/');
                 }, function (error) {
