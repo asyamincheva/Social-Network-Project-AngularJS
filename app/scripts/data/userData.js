@@ -5,6 +5,12 @@ mySquadSocialNetwork.factory('userData', ['$resource', 'baseUrl', 'credentials',
         return $resource(baseUrl + 'users/login')
             .save(user);
     }
+
+    function registerUser(user) {
+        return $resource(baseUrl + 'users/register')
+            .save(user);
+    }
+
     function getLoggedUserData() {
         var authorization = credentials.getAuthorization();
         return $resource(
@@ -21,6 +27,7 @@ mySquadSocialNetwork.factory('userData', ['$resource', 'baseUrl', 'credentials',
 
     return {
         login: loginUser,
+        register: registerUser,
         getLoggedUserData: getLoggedUserData
     }
 }]);
