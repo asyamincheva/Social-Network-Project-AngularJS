@@ -1,5 +1,4 @@
+<div ng-include="'partials/guest/guest.html'" ng-if="!isLogged"></div>
 
-    <div ng-include="'partials/guest/guest.html'" ng-if="!isLogged"></div>
-
-    <header ng-include="'partials/user/header.html'" ng-if="isLogged"></header>
-    <div ng-include="'partials/user/news-feed.html'" ng-if="isLogged"></div>
+<header ng-include="'partials/user/header.html'" ng-if="isLogged"></header>
+<div ng-include="'partials/user/my-squad-news-feed.html'" ng-if="isLogged"></div>
