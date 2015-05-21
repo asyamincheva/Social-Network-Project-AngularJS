@@ -20,7 +20,6 @@ mySquadSocialNetwork.factory('credentials',
         }
 
         function checkForSessionToken() {
-            console.log(666);
             return ($sessionStorage.authorization || $localStorage.authorization);
         }
 

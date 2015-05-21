@@ -26,3 +26,7 @@
     font-size: 20px;
     margin-bottom: 5px;
 }
+
+body {
+    background: url('../img/light-gradient-10-1600x900.jpg') no-repeat center center fixed;
+}
