@@ -82,10 +82,25 @@ mySquadSocialNetwork.factory('userData', ['$resource', 'baseUrl', 'credentials',
             .get();
     }
 
+    function editUser(user) {
+        var authorization = credentials.getAuthorization();
+        return $resource(
+            baseUrl + 'me',
+            null,
+            {
+                'put': {
+                    method: 'PUT',
+                    headers: {'Authorization': authorization}
+                }
+            })
+            .put(user);
+    }
+
     return {
         login: loginUser,
         register: registerUser,
         logout: logoutUser,
+        edit: editUser,
         getLoggedUserData: getLoggedUserData,
         searchUsersByName: searchUsersByName,
         getUserFullData: getUserFullData,
