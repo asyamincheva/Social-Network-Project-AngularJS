@@ -18,7 +18,7 @@
 
 <body>
 <!-- container section start -->
-<section id="container" class="">
+<section id="container" class="" ng-controller="UserHeaderController">
     <!--header start-->
     <header class="header dark-bg">
         <div class="toggle-nav">
@@ -34,7 +34,8 @@
             <ul class="nav top-menu">
                 <li>
                     <form class="navbar-form">
-                        <input class="form-control" placeholder="Search" type="text">
+                        <input class="form-control" ng-model="searchTerm" ng-change="searchUsers(searchTerm)" placeholder="Search users" type="text">
+                        <div users-search-results ng-if="searchResultsShown"></div>
                     </form>
                 </li>
             </ul>
@@ -243,11 +244,12 @@
                 <!-- alert notification end-->
                 <!-- user login dropdown start-->
                 <li class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#" ng-class="{ active: isActive('/users/{{user.username}}')}">
                             <span class="profile-ava">
-                                <img alt="" src="img/avatar1_small.jpg">
+                                <img src="" ng-src="{{user.profileImageData}}" alt="{{user.name}}" ng-if="user.profileImageData">
+                                <img src="" ng-src="{{defaultProfileImageData}}" alt="{{user.name}}" ng-if="!user.profileImageData">
                             </span>
-                        <span class="username">Jenifer Smith</span>
+                        <span class="username"><span>{{user.name}}</span></span>
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu extended logout">
