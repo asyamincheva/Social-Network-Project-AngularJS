@@ -36,7 +36,7 @@ var mySquadSocialNetwork = angular
                     }
                 }
             })
-            
+
             .otherwise({
                 redirectTo: '/'
             })
