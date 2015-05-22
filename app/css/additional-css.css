@@ -34,3 +34,8 @@ body {
 #radio-input-register {
     padding-bottom: 0px;
 }
+
+.user-image-small {
+    width: 35px;
+    height: 35px;
+}

@@ -247,8 +247,8 @@
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#" ng-class="{ active: isActive('/users/{{user.username}}')}">
                             <span class="profile-ava">
-                                <img src="" ng-src="{{user.profileImageData}}" alt="{{user.name}}" ng-if="user.profileImageData">
-                                <img src="" ng-src="{{defaultProfileImageData}}" alt="{{user.name}}" ng-if="!user.profileImageData">
+                                <img src="" class="user-image-small" ng-src="{{user.profileImageData}}" alt="{{user.name}}" ng-if="user.profileImageData">
+                                <img src="" class="user-image-small" ng-src="{{defaultProfileImageData}}" alt="{{user.name}}" ng-if="!user.profileImageData">
                             </span>
                         <span class="username"><span>{{user.name}}</span></span>
                         <b class="caret"></b>
