@@ -19,7 +19,7 @@ mySquadSocialNetwork.controller('LoginController',
                     }
 
                     toaster.pop('success', 'Login successful!');
-                    $location.path('/');
+                    $location.path('/home');
                 }, function (error) {
                     toaster.pop('error', 'Login unsuccessful!', error.data.message);
                 });

@@ -12,7 +12,7 @@ mySquadSocialNetwork.controller('RegisterController',
                     credentials.saveLoggedUser(user);
                     credentials.saveTokenInSessionStorage(data.access_token, data.token_type);
                     toaster.pop('success', 'Register successful!');
-                    $location.path('/');
+                    $location.path('/home');
                 }, function (error) {
                     toaster.pop('error', 'Registration error!', error.data.message);
                 })
