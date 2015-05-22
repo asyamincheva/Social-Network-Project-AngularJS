@@ -25,16 +25,16 @@
                     <div class="form-group">
                         <label for="inputProfileImageData" class="col-md-3 control-label">Profile picture<br />Limit: 128kb</label>
                         <div class="col-md-9">
-                            <input type="file" class="form-control" ng-model="editUser.profileImageData" base-sixty-four-input id="inputProfileImageData" placeholder="img" ng-change="formatProfileImgToBase64()">
-                            <img src="" ng-src="{{editUser.profileImageData}}" class="img-thumbnail img-responsive" base-sixty-four-image="editUser.profileImageData" alt="{{editUser.name}}" ng-if="editUser.profileImageData"/>
-                        </div>
+							<input type="file" class="form-control" ng-model="editUser.profileImageData" onchange="angular.element(this).scope().uploadProfileImage(this.files)" id="inputProfileImageData">
+							<img src="{{editUser.profileImageData}}" id="profile-image" style="width: 200px; height: 200px">
+						</div>
                     </div>
                     <div class="form-group">
                         <label for="inputCoverImageData" class="col-md-3 control-label">Cover picture<br />Limit: 1024kb</label>
                         <div class="col-md-9">
-                            <input type="file" class="form-control" ng-model="editUser.coverImageData" base-sixty-four-input id="inputCoverImageData" placeholder="img" ng-change="formatCoverImgToBase64()">
-                            <img src="" ng-src="{{editUser.coverImageData}}" class="img-thumbnail img-responsive" base-sixty-four-image="user.coverImageData" alt="{{editUser.name}}" ng-if="editUser.coverImageData"/>
-                        </div>
+                        	<input type="file" class="form-control" ng-model="editUser.coverImageData" onchange="angular.element(this).scope().uploadCoverImage(this.files)" id="inputCoverImageData">
+							<img src="{{editUser.coverImageData}}" id="cover-image">
+						</div>
                     </div>
                     <div class="form-group">
                         <label class="col-md-3 control-label">Gender</label>
