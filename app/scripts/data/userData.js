@@ -11,6 +11,20 @@ mySquadSocialNetwork.factory('userData', ['$resource', 'baseUrl', 'credentials',
             .save(user);
     }
 
+    function logoutUser() {
+        var authorization = credentials.getAuthorization();
+        return $resource(
+            baseUrl + 'users/logout',
+            null,
+            {
+                'save': {
+                    method: 'POST',
+                    headers: {'Authorization': authorization}
+                }
+            })
+            .save();
+    }
+
     function getLoggedUserData() {
         var authorization = credentials.getAuthorization();
         return $resource(
@@ -71,6 +85,7 @@ mySquadSocialNetwork.factory('userData', ['$resource', 'baseUrl', 'credentials',
     return {
         login: loginUser,
         register: registerUser,
+        logout: logoutUser,
         getLoggedUserData: getLoggedUserData,
         searchUsersByName: searchUsersByName,
         getUserFullData: getUserFullData,

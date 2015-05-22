@@ -8,6 +8,10 @@ var mySquadSocialNetwork = angular
                 templateUrl: 'partials/home.html',
                 controller: 'HomeController'
             })
+            .when('/logout', {
+                templateUrl: 'partials/user/logout.html',
+                controller: 'LogoutController'
+            })
             .otherwise({
                 redirectTo: '/'
             })
