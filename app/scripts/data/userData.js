@@ -25,9 +25,55 @@ mySquadSocialNetwork.factory('userData', ['$resource', 'baseUrl', 'credentials',
             .get();
     }
 
+    function searchUsersByName(name) {
+        var authorization = credentials.getAuthorization();
+        return $resource(
+            baseUrl + 'users/search?searchTerm=' + name,
+            null,
+            {
+                'get': {
+                    method: 'GET',
+                    isArray: true,
+                    headers: {'Authorization': authorization}
+                }
+            })
+            .get();
+    }
+
+    function getUserFullData(username) {
+        var authorization = credentials.getAuthorization();
+        return $resource(
+            baseUrl + 'users/' + username,
+            null,
+            {
+                'get': {
+                    method: 'GET',
+                    headers: {'Authorization': authorization}
+                }
+            })
+            .get();
+    }
+
+    function getUserPreviewData(username) {
+        var authorization = credentials.getAuthorization();
+        return $resource(
+            baseUrl + 'users/' + username + '/preview',
+            null,
+            {
+                'get': {
+                    method: 'GET',
+                    headers: {'Authorization': authorization}
+                }
+            })
+            .get();
+    }
+
     return {
         login: loginUser,
         register: registerUser,
-        getLoggedUserData: getLoggedUserData
+        getLoggedUserData: getLoggedUserData,
+        searchUsersByName: searchUsersByName,
+        getUserFullData: getUserFullData,
+        getUserPreviewData: getUserPreviewData
     }
 }]);
