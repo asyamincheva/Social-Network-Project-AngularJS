@@ -8,10 +8,12 @@ var mySquadSocialNetwork = angular
                 templateUrl: 'partials/home.html',
                 controller: 'HomeController'
             })
+
             .when('/logout', {
                 templateUrl: 'partials/user/logout.html',
                 controller: 'LogoutController'
             })
+
             .when('/profile', {
                 templateUrl: 'partials/user/edit-profile.html',
                 controller: 'EditProfileController',
@@ -23,6 +25,18 @@ var mySquadSocialNetwork = angular
                     }
                 }
             })
+            .when('/profile/password', {
+                templateUrl: 'partials/user/change-password.html',
+                controller: 'ChangePasswordController',
+                resolve:{
+                    isLogged: function($location, $sessionStorage, $localStorage){
+                        if(!$sessionStorage.authorization && !$localStorage.authorization){
+                            $location.path('/');
+                        }
+                    }
+                }
+            })
+            
             .otherwise({
                 redirectTo: '/'
             })
