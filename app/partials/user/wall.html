@@ -1,6 +1,7 @@
 <header ng-include="'partials/user/header.html'"></header>
 
 <div class="row wall-header">
+    <img class="wall-user-cover-image" src="" ng-src="{{userData.coverImageData}}" alt="{{userData.name}}">
     <div id="wall-header-data">
         <img src="" class="wall-user-profile-image" ng-src="{{userData.profileImageData}}" alt="{{userData.name}}" ng-if="userData.profileImageData">
         <img src="" class="wall-user-profile-image" ng-src="{{defaultProfileImageData}}" alt="{{user.name}}" ng-if="!userData.profileImageData">
@@ -9,7 +10,6 @@
             <button class="btn btn-warning btn-lg {{disabledButton}}" ng-click="sendFriendRequest(userData.username)">{{buttonName}}</button>
         </div>
     </div>
-    <img src="" ng-src="{{userData.coverImageData}}" alt="{{userData.name}}">
 </div>
 <div class="row">
     <div class="col-sm-6 col-md-6 col-lg-6 col-md-offset-1">
