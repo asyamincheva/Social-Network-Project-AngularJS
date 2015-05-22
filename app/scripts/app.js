@@ -37,6 +37,18 @@ var mySquadSocialNetwork = angular
                 }
             })
 
+            .when('/users/:username', {
+                templateUrl: 'partials/user/wall.html',
+                controller: 'WallController',
+                resolve:{
+                    isLogged: function($location, $sessionStorage, $localStorage){
+                        if(!$sessionStorage.authorization && !$localStorage.authorization){
+                            $location.path('/');
+                        }
+                    }
+                }
+            })
+            
             .otherwise({
                 redirectTo: '/'
             })
