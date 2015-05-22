@@ -12,7 +12,7 @@ var mySquadSocialNetwork = angular
                 templateUrl: 'partials/user/logout.html',
                 controller: 'LogoutController'
             })
-            .when('/edit-profile', {
+            .when('/profile', {
                 templateUrl: 'partials/user/edit-profile.html',
                 controller: 'EditProfileController',
                 resolve:{
