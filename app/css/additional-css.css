@@ -29,6 +29,10 @@
 
 body {
     background: url('../img/light-gradient-10-1600x900.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 #radio-input-register {
@@ -37,6 +41,7 @@ body {
 
 .user-image-small {
 }
-.user-image {
+.user-image, .user-image-small{
     width: 35px;
+    height: 35px;
 }
