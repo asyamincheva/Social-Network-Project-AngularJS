@@ -40,8 +40,6 @@ body {
     padding-bottom: 0px;
 }
 
-.user-image-small {
-}
 .user-image, .user-image-small{
     width: 35px;
     height: 35px;
@@ -79,4 +77,8 @@ body {
 
 #header-fix {
     overflow: scroll;
+}
+
+#edit-profile-margin{
+    margin-top: -80px;
 }
