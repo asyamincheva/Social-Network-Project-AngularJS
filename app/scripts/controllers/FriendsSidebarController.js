@@ -19,7 +19,7 @@ mySquadSocialNetwork.controller('FriendsSidebarController',
                 });
         } else {
             $scope.username = $routeParams.username;
-            
+
             friendsData.getOtherUserFriendsPreview($routeParams.username)
                 .$promise
                 .then(function (data) {
