@@ -67,3 +67,12 @@ body {
     width: 50px;
     height: 50px;
 }
+.panel .panel-heading, #post-panel-color, .panel.panel-primary .panel-heading, .panel.panel-primary .panel-footer{
+    background-color: #a9d9c9;
+    border: 2px solid #76ad96;
+}
+
+.panel.panel-warning .panel-heading, .panel.panel-warning .panel-footer {
+    background-color: #e4f4f4;
+    border: 2px solid #8170ea;
+}
