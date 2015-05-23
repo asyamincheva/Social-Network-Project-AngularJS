@@ -60,7 +60,7 @@ body {
 .row{
     margin: 0px;
 }
-.wall-user-cover-image, .friends-page, #margined {
+.wall-user-cover-image, .friends-page, #margined, .row {
     margin-top: 100px;
 }
 .panel-heading img, .table img, .friends-preview img, .wall-user-profile-image{
@@ -75,4 +75,8 @@ body {
 .panel.panel-warning .panel-heading, .panel.panel-warning .panel-footer {
     background-color: #e4f4f4;
     border: 2px solid #8170ea;
+}
+
+#header-fix {
+    overflow: scroll;
 }
