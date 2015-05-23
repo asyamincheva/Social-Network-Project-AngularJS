@@ -59,6 +59,6 @@ body {
 .row{
     margin: 0px;
 }
-.wall-user-cover-image {
+.wall-user-cover-image, .friends-page, #margined {
     margin-top: 100px;
 }
