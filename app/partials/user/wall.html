@@ -21,8 +21,8 @@
                         <!--Posts-->
                         <div class="panel panel-primary news-feed">
                             <div class="panel-heading">
-                                <img src="" ng-src="{{post.author.profileImageData}}" alt="post.author.name" ng-if="post.author.profileImageData"/>
-                                <img src="" ng-src="{{defaultProfileImageData}}" alt="post.author.name" ng-if="!post.author.profileImageData"/>
+                                <img id="pic-in-posts-friends" src="" ng-src="{{post.author.profileImageData}}" alt="post.author.name" ng-if="post.author.profileImageData"/>
+                                <img  id="pic-in-posts-friends" src="" ng-src="{{defaultProfileImageData}}" alt="post.author.name" ng-if="!post.author.profileImageData"/>
                                 <div>
                                     <a href="#/users/{{post.author.username}}">
                                         {{post.author.name}}
@@ -131,9 +131,9 @@
                     <div id="message-input" class="form-group">
                         <div class="input-group">
                             <input type="text" ng-model="postContent" class="form-control" placeholder="Message...">
-                                                                <span class="input-group-btn">
-                                                                  <button class="btn btn-default" type="button" ng-click="submitPost(postContent)">Submit</button>
-                                                                </span>
+                                 <span class="input-group-btn">
+                                     <button class="btn btn-default" type="button" ng-click="submitPost(postContent)">Submit</button>
+                                 </span>
                         </div>
                         <a href="#/users/{{user.username}}">
                             <img class="wall-user-profile-image" src="" ng-src="{{user.profileImageData}}" alt="{{user.name}}" ng-if="user.profileImageData">
