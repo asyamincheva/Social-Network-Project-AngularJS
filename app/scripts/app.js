@@ -39,7 +39,7 @@ var mySquadSocialNetwork = angular
 
             .when('/users/:username', {
                 templateUrl: 'partials/user/wall.html',
-                controller: 'WallController',
+                controller: 'UserWallController',
                 resolve:{
                     isLogged: function($location, $sessionStorage, $localStorage){
                         if(!$sessionStorage.authorization && !$localStorage.authorization){

@@ -17,7 +17,7 @@ mySquadSocialNetwork.factory('postData', ['$resource', 'baseUrl', 'credentials',
             .get();
     }
 
-    function getFriendWall(username, startPostId, pageSize) {
+    function getUserWall(username, startPostId, pageSize) {
         var authorization = credentials.getAuthorization();
         return $resource(
             baseUrl + 'users/'+ username + '/wall?StartPostId=' + (startPostId || '') + '&PageSize=' + pageSize,
@@ -119,7 +119,7 @@ mySquadSocialNetwork.factory('postData', ['$resource', 'baseUrl', 'credentials',
 
     return {
         getNewsFeed: getNewsFeed,
-        getFriendWall: getFriendWall,
+        getUserWall: getUserWall,
         addPost: addPost,
         editPost: editPost,
         deletePost: deletePost,
