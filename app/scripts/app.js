@@ -49,6 +49,18 @@ var mySquadSocialNetwork = angular
                 }
             })
 
+            .when('/users/:username/friends', {
+                templateUrl: 'partials/user/friends.html',
+                controller: 'FriendsController',
+                resolve:{
+                    isLogged: function($location, $sessionStorage, $localStorage){
+                        if(!$sessionStorage.authorization && !$localStorage.authorization){
+                            $location.path('/');
+                        }
+                    }
+                }
+            })
+
             .otherwise({
                 redirectTo: '/'
             })
