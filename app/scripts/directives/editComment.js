@@ -1,6 +1,6 @@
 'use strict';
 
-socialNetworkApp.directive('editComment', function () {
+mySquadSocialNetwork.directive('editComment', function () {
     return {
         templateUrl: 'partials/directives/edit-comment.html',
         restrict: 'A',
