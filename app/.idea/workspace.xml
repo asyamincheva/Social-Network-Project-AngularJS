@@ -53,16 +53,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="friendsData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/data/friendsData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/user/header.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -73,21 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0787037">
-              <caret line="3" column="97" selection-start-line="3" selection-start-column="97" selection-end-line="3" selection-end-column="97" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/data/postData.js">
-          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="111" column="27" selection-start-line="111" selection-start-column="27" selection-end-line="111" selection-end-column="27" />
+              <caret line="3" column="97" selection-start-line="3" selection-start-column="97" selection-end-line="3" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -103,11 +83,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="additional-css.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="additional-css.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/additional-css.css">
           <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.52469134">
+              <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.min.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+          <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="21" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+              <caret line="8" column="7452" selection-start-line="8" selection-start-column="7452" selection-end-line="8" selection-end-column="7452" />
               <folding />
             </state>
           </provider>
@@ -154,11 +144,12 @@
         <option value="$PROJECT_DIR$/partials/user/edit-profile.html" />
         <option value="$PROJECT_DIR$/partials/user/header.html" />
         <option value="$PROJECT_DIR$/partials/user/news-feed.html" />
-        <option value="$PROJECT_DIR$/css/additional-css.css" />
         <option value="$PROJECT_DIR$/css/loading-bar.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/lib/loading-bar.js" />
         <option value="$PROJECT_DIR$/scripts/app.js" />
+        <option value="$PROJECT_DIR$/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/css/additional-css.css" />
       </list>
     </option>
   </component>
@@ -678,14 +669,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/additional-css.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="21" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/loading-bar.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -714,8 +697,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0787037">
+        <state vertical-scroll-proportion="0.0">
           <caret line="3" column="97" selection-start-line="3" selection-start-column="97" selection-end-line="3" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="7452" selection-start-line="8" selection-start-column="7452" selection-end-line="8" selection-end-column="7452" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/bootstrap.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.665589">
+          <caret line="101" column="5" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/additional-css.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52469134">
+          <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
           <folding />
         </state>
       </provider>

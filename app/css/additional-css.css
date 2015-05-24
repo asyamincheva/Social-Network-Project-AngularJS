@@ -56,9 +56,10 @@ body {
 }
 
 .row{
-    margin: 0px;
+    padding-left: 15px; !important;
+    padding-right: 15px; !important;
 }
-.wall-user-cover-image, .friends-page, #margined, .row {
+.wall-user-cover-image, .friends-page, #margined{
     margin-top: 100px;
 }
 .panel-heading img, .table img, .friends-preview img, .wall-user-profile-image{
