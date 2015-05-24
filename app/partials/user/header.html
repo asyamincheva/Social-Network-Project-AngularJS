@@ -21,16 +21,10 @@
 
         <div class="top-nav notification-row">
             <ul class="nav pull-right top-menu">
-                <li id="mail_notificatoin_bar" class="dropdown">
-                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                        <i class="icon-envelope-l"></i>
-                        <span class="badge bg-important">5</span>
-                    </a>
-                </li>
                 <li id="alert_notificatoin_bar" class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                         <i class="icon-bell-l"></i>
-                        <span class="badge bg-important">7</span>
+                        <span data-target="#requests" class="badge bg-important">{{requestsCount}}</span>
                     </a>
                 </li>
                 <li>
