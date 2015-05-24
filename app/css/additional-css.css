@@ -1,3 +1,12 @@
+body {
+    background: url('../img/light-gradient-10-1600x900.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    word-break: break-all;
+}
+
 #login-form-box {
     float: left;
     margin: 0;
@@ -5,8 +14,6 @@
 
 #register-form-box {
     float: right;
-}
-#login-register-forms-box {
 }
 
 #login-register-container {
@@ -25,15 +32,6 @@
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 5px;
-}
-
-body {
-    background: url('../img/light-gradient-10-1600x900.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    word-break: break-all;
 }
 
 #radio-input-register {
@@ -59,14 +57,17 @@ body {
     padding-left: 15px; !important;
     padding-right: 15px; !important;
 }
-.wall-user-cover-image, .friends-page, #margined{
+
+.wall-user-cover-image, .friends-page, #margined {
     margin-top: 100px;
 }
-.panel-heading img, .table img, .friends-preview img, .wall-user-profile-image{
+
+.panel-heading img, .table img, .friends-preview img, .wall-user-profile-image {
     width: 50px;
     height: 50px;
 }
-.panel .panel-heading, #post-panel-color, .panel.panel-primary .panel-heading, .panel.panel-primary .panel-footer{
+
+.panel .panel-heading, #post-panel-color, .panel.panel-primary .panel-heading, .panel.panel-primary .panel-footer {
     background-color: #a9d9c9;
     border: 2px solid #76ad96;
 }
@@ -80,6 +81,22 @@ body {
     overflow: scroll;
 }
 
-#edit-profile-margin{
+#edit-profile-margin {
     margin-top: -80px;
 }
+.fixed-margins{
+    margin-top: 100px;
+    display: table-cell;
+    width: 80%;
+}
+.fixed-padding{
+    padding-top: 100px;
+    display: table-cell;
+    padding-left: 20px;
+    width: 20%;
+}
+
+#tabled{
+    display: table;
+}
+
