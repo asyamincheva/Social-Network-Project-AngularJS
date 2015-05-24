@@ -31,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="posts.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/partials/directives/posts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.076923">
-              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.14790997">
+              <caret line="107" column="12" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -51,10 +51,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit-comment.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="edit-comment.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/directives/edit-comment.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54662377">
+            <state vertical-scroll-proportion="-13.076923">
               <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding />
             </state>
@@ -97,9 +97,9 @@
         <option value="$PROJECT_DIR$/partials/user/news-feed.html" />
         <option value="$PROJECT_DIR$/partials/user/header.html" />
         <option value="$PROJECT_DIR$/css/additional-css.css" />
-        <option value="$PROJECT_DIR$/partials/directives/posts.html" />
         <option value="$PROJECT_DIR$/partials/directives/edit-post.html" />
         <option value="$PROJECT_DIR$/partials/directives/edit-comment.html" />
+        <option value="$PROJECT_DIR$/partials/directives/posts.html" />
       </list>
     </option>
   </component>
@@ -781,10 +781,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/directives/posts.html">
+    <entry file="file://$PROJECT_DIR$/partials/directives/edit-comment.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.076923">
-          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -797,10 +797,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/partials/directives/edit-comment.html">
+    <entry file="file://$PROJECT_DIR$/partials/directives/posts.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54662377">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state vertical-scroll-proportion="-0.14790997">
+          <caret line="107" column="12" selection-start-line="107" selection-start-column="12" selection-end-line="107" selection-end-column="12" />
           <folding />
         </state>
       </provider>
