@@ -1,7 +1,7 @@
 'use strict';
 
 var mySquadSocialNetwork = angular
-    .module('mySquadSocialNetwork', ['ngResource', 'ngRoute', 'ngStorage', 'toaster'])
+    .module('mySquadSocialNetwork', ['ngResource', 'ngRoute', 'ngStorage', 'toaster', 'ngAnimate', 'chieffancypants.loadingBar'])
     .config(function ($routeProvider) {
         $routeProvider
             .when('/', {
